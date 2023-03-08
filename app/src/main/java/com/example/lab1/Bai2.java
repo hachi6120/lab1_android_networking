@@ -19,7 +19,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class MainActivity extends AppCompatActivity {
+public class Bai2 extends AppCompatActivity {
 
     Button btn;
     TextView tv;
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.bai2);
 
         btn = findViewById(R.id.btnLoadImg);
         tv = findViewById(R.id.tvMessage);
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                 });
                 myThread.start();*/
 
-                progressDialog = ProgressDialog.show(MainActivity.this,"","Downloading...");
+                progressDialog = ProgressDialog.show(Bai2.this,"","Downloading...");
                 Runnable runnable = new Runnable() {
                     @Override
                     public void run() {
